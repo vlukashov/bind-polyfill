@@ -1,0 +1,21 @@
+{
+  "name": "js-bind-polyfill",
+  "version": "1.0.0",
+  "description": "A polyfill for Function.prototype.bind()",
+  "main": "src/bind.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vlukashov/js-bind-polyfill.git"
+  },
+  "scripts": {
+    "test": "jasmine",
+    "debug-test": "node --inspect-brk node_modules/.bin/jasmine",
+    "watch": "chokidar 'src/**/*.js' 'spec/**/*.js' -c 'npm run test'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chokidar-cli": "^1.2.0",
+    "jasmine": "^2.6.0"
+  }
+}
